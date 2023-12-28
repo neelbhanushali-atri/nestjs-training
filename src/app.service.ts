@@ -7,6 +7,18 @@ export class AppService {
   }
 
   postHello(): string {
-    return 'Hellow World but post!'
+    return 'Hello World but post!'
+  }
+
+  patchHello(): string {
+    return 'Hello World but patch!'
+  }
+
+  putHello(): string {
+    return 'Hello World but put!'
+  }
+
+  deleteHello(): string {
+    return 'Hello World but delete!'
   }
 }

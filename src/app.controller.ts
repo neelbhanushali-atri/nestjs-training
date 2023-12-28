@@ -1,4 +1,4 @@
-import { Controller, Get, Post } from '@nestjs/common';
+import { Controller, Get, Post, Patch, Put, Delete } from '@nestjs/common';
 import { AppService } from './app.service';
 
 @Controller()
@@ -13,5 +13,20 @@ export class AppController {
   @Post()
   postHello(): string {
     return this.appService.postHello();
+  }
+
+  @Patch()
+  patchHello(): string {
+    return this.appService.patchHello();
+  }
+
+  @Put()
+  putHello(): string {
+    return this.appService.putHello();
+  }
+
+  @Delete()
+  deleteHello(): string {
+    return this.appService.deleteHello();
   }
 }
